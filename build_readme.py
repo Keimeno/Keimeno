@@ -1,5 +1,6 @@
 from python_graphql_client import GraphqlClient
 from datetime import datetime
+from pytz import timezone
 import feedparser
 import httpx
 import json
@@ -130,9 +131,9 @@ def fetch_releases(oauth_token):
                         "release": repo["releases"]["nodes"][0]["name"]
                         .replace(repo["name"], "")
                         .strip(),
-                        "published_at": repo["releases"]["nodes"][0][
+                        "date": convert_rfc_3339_cet_formatted(repo["releases"]["nodes"][0][
                             "publishedAt"
-                        ].split("T")[0],
+                        ]),
                         "tag_name": repo["releases"]["nodes"][0]["tag"]["name"],
                         "tag_url": repo["releases"]["nodes"][0]["url"],
                     }
@@ -174,7 +175,7 @@ def fetch_commits(oauth_token):
                       "repo": repo["name"],
                       "repo_url": repo["url"],
                       "url": commit["url"],
-                      "date": commit["committedDate"].split("T")[0],
+                      "date": convert_rfc_3339_cet_formatted(commit["committedDate"]),
                       "oid": commit["abbreviatedOid"],
                   }
               )
@@ -182,13 +183,18 @@ def fetch_commits(oauth_token):
 
     return commits
 
+def convert_rfc_3339_cet_formatted(rfc_3339):
+    time = datetime.fromisoformat(rfc_3339).strftime('%s')
+    date = datetime.fromtimestamp(int(time), tz=timezone("CET"))
+    return date.strftime('%Y-%m-%d %H:%M')
+
 if __name__ == "__main__":
     readme = root / "README.md"
     releases = fetch_releases(TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md="\n".join(
         [
-            "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {published_at} |".format(**release)
+            "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {date} |".format(**release)
             for release in releases[:5]
         ]
     )
@@ -205,7 +211,7 @@ if __name__ == "__main__":
     )
     rewritten=replace_chunk(rewritten, "recent_commits", md)
 
-    now = datetime.now()
+    now = datetime.now(timezone("CET"))
     md = now.strftime("%Y-%m-%d %H:%M")
     rewritten=replace_chunk(rewritten, "last_updated", md)
 
