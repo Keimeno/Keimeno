@@ -74,6 +74,7 @@ query {
        	contributionsCollection {
           commitContributionsByRepository {
             repository {
+              isPrivate
               name
               url
               refs(refPrefix: "refs/heads/", first: 30) {
@@ -157,11 +158,14 @@ def fetch_commits(oauth_token):
         name = repo.get("name")
 
         if not name:
-          continue
-        elif name not in repo_names:
+            print("Continued")
+            continue
+        elif repo["name"] not in repo_names:
+            print("doing run")
             repos.append(repo)
             repo_names.add(repo["name"])
             if repo["isPrivate"] == True:
+              print("it is private!")
               continue
 
             for branch in repo["refs"]["edges"]:
