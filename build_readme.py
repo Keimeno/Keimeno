@@ -16,6 +16,18 @@ def replace_chunk(content, marker, chunk):
         r"<!\-\- {} starts \-\->.*<!\-\- {} ends \-\->".format(marker, marker),
         re.DOTALL,
     )
+
+    if marker == 'recent_releases':
+      chunk = """
+| Repository | Version | Date |
+| :- | :- | :- |
+""" + chunk
+    elif marker == 'recent_commits':
+      chunk = """
+| Repository | Commit | Date |
+| :- | :- | :- |      
+""" + chunk
+
     chunk = "<!-- {} starts -->\n{}\n<!-- {} ends -->".format(
         marker, chunk, marker)
     return r.sub(chunk, content)
@@ -32,12 +44,16 @@ query {
       }
       nodes {
         name
+        url
         releases(last:1) {
           totalCount
           nodes {
             name
             publishedAt
             url
+            tag {
+              name
+            }
           }
         }
       }
@@ -104,13 +120,15 @@ def fetch_releases(oauth_token):
                 releases.append(
                     {
                         "repo": repo["name"],
+                        "repo_url": repo["url"],
                         "release": repo["releases"]["nodes"][0]["name"]
                         .replace(repo["name"], "")
                         .strip(),
                         "published_at": repo["releases"]["nodes"][0][
                             "publishedAt"
                         ].split("T")[0],
-                        "url": repo["releases"]["nodes"][0]["url"],
+                        "tag_name": repo["releases"]["nodes"][0]["tag"]["name"],
+                        "tag_url": repo["releases"]["nodes"][0]["url"],
                     }
                 )
         has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"][
@@ -156,7 +174,7 @@ if __name__ == "__main__":
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md="\n".join(
         [
-            "* [{repo} {release}]({url}) - {published_at}".format(**release)
+            "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {published_at} |".format(**release)
             for release in releases[:5]
         ]
     )
@@ -167,7 +185,7 @@ if __name__ == "__main__":
     commits.sort(key = lambda r: r["date"], reverse=True)
     md = "\n".join(
         [
-            "* [{repo}]({repo_url}) #[{oid}]({url}) - {date}".format(**commit)
+            "| [{repo}]({repo_url}) | [{oid}]({url}) | {date}".format(**commit)
             for commit in commits[:5]
         ]
     )
