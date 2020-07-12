@@ -131,11 +131,10 @@ def fetch_releases(oauth_token):
                         "release": repo["releases"]["nodes"][0]["name"]
                         .replace(repo["name"], "")
                         .strip(),
-                        "date": convert_rfc_3339_cet_formatted(repo["releases"]["nodes"][0][
-                            "publishedAt"
-                        ]),
+                        "date": repo["releases"]["nodes"][0]["publishedAt"],
                         "tag_name": repo["releases"]["nodes"][0]["tag"]["name"],
                         "tag_url": repo["releases"]["nodes"][0]["url"],
+                        "formatted_date": convert_rfc_3339_cet_formatted(repo["releases"]["nodes"][0]["publishedAt"]),
                     }
                 )
         has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"][
@@ -175,8 +174,9 @@ def fetch_commits(oauth_token):
                       "repo": repo["name"],
                       "repo_url": repo["url"],
                       "url": commit["url"],
-                      "date": convert_rfc_3339_cet_formatted(commit["committedDate"]),
+                      "date": commit["committedDate"],
                       "oid": commit["abbreviatedOid"],
+                      "formatted_date": convert_rfc_3339_cet_formatted(commit["committedDate"]),
                   }
               )
 
@@ -194,7 +194,7 @@ if __name__ == "__main__":
     releases.sort(key=lambda r: r["date"], reverse=True)
     md="\n".join(
         [
-            "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {date} |".format(**release)
+            "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {formatted_date} |".format(**release)
             for release in releases[:5]
         ]
     )
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     commits.sort(key = lambda r: r["date"], reverse=True)
     md = "\n".join(
         [
-            "| [{repo}]({repo_url}) | [{oid}]({url}) | {date} |".format(**commit)
+            "| [{repo}]({repo_url}) | [{oid}]({url}) | {formatted_date} |".format(**commit)
             for commit in commits[:5]
         ]
     )
