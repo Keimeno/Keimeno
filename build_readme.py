@@ -186,7 +186,7 @@ def fetch_commits(oauth_token):
 def convert_rfc_3339_cet_formatted(rfc_3339):
     time = datetime.fromisoformat(rfc_3339[:-1]).strftime('%s')
     date = datetime.fromtimestamp(int(time), tz=timezone("CET"))
-    return date.strftime('%Y-%m-%d %H:%M')
+    return date.strftime('%d.%m.%Y %H:%M')
 
 if __name__ == "__main__":
     readme = root / "README.md"
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     rewritten=replace_chunk(rewritten, "recent_commits", md)
 
     now = datetime.now(timezone("CET"))
-    md = now.strftime("%Y-%m-%d %H:%M")
+    md = now.strftime("%d.%m.%Y %H:%M")
     rewritten=replace_chunk(rewritten, "last_updated", md)
 
     readme.open("w").write(rewritten)
