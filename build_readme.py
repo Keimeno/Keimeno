@@ -141,7 +141,7 @@ def fetch_commits(oauth_token):
                     "repo": repo["name"],
                     "repo_url": repo["url"],
                     "url": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["url"],
-                    "date": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["commited_date"],
+                    "date": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["committedDate"],
                     "oid": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["oid"][:7],
                 }
             )
