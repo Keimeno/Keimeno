@@ -155,17 +155,12 @@ def fetch_commits(oauth_token):
         )
 
     for repo in data["data"]["search"]["nodes"][0]["contributionsCollection"]["commitContributionsByRepository"]:
-        name = repo.get("name")
+        repo = repo["repository"]
 
-        if not name:
-            print("Continued")
-            continue
-        elif repo["name"] not in repo_names:
-            print("doing run")
+        if repo["name"] not in repo_names:
             repos.append(repo)
             repo_names.add(repo["name"])
             if repo["isPrivate"] == True:
-              print("it is private!")
               continue
 
             for branch in repo["refs"]["edges"]:
