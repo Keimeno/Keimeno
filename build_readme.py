@@ -117,9 +117,7 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print()
-        print(json.dumps(data, indent=4))
-        print()
+
         for repo in data["data"]["viewer"]["repositories"]["nodes"]:
             if repo["releases"]["totalCount"] and repo["name"] not in repo_names:
                 repos.append(repo)
@@ -155,13 +153,15 @@ def fetch_commits(oauth_token):
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
 
-    print()
-    print(json.dumps(data, indent=4))
-    print()
     for repo in data["data"]["search"]["nodes"][0]["contributionsCollection"]["commitContributionsByRepository"]:
-        if repo["name"] not in repo_names:
+        if repo == {}:
+          continue
+        elif repo["name"] not in repo_names:
             repos.append(repo)
             repo_names.add(repo["name"])
+            if repo["isPrivate"] == True:
+              continue
+            
             for branch in repo["refs"]["edges"]:
               nodeList = branch["node"]["target"]["history"]["nodes"]
               if len(nodeList) == 0:
