@@ -64,6 +64,7 @@ query {
                   ... on Commit {
                     url
                     committedDate
+                    oid
                     author {
                       name
                       email
