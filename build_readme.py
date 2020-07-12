@@ -1,4 +1,5 @@
 from python_graphql_client import GraphqlClient
+from datetime import datetime
 import feedparser
 import httpx
 import json
@@ -190,5 +191,9 @@ if __name__ == "__main__":
         ]
     )
     rewritten=replace_chunk(rewritten, "recent_commits", md)
+
+    now = datetime.now()
+    md = now.strftime("%Y-%m-%d %H:%M")
+    rewritten=replace_chunk(rewritten, "last_updated", md)
 
     readme.open("w").write(rewritten)
