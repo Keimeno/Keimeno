@@ -4,11 +4,8 @@ Testing...
 
 ### Recent releases
 <!-- recent_releases starts -->
-* [datasette-publish-fly 1.0](https://github.com/simonw/datasette-publish-fly/releases/tag/1.0) - 2020-07-11
-* [github-to-sqlite 2.3](https://github.com/dogsheep/github-to-sqlite/releases/tag/2.3) - 2020-07-09
-* [sqlite-utils 2.11](https://github.com/simonw/sqlite-utils/releases/tag/2.11) - 2020-07-08
-* [datasette-media 0.3](https://github.com/simonw/datasette-media/releases/tag/0.3) - 2020-07-08
-* [datasette-configure-fts 1.0](https://github.com/simonw/datasette-configure-fts/releases/tag/1.0) - 2020-07-06
+* [personal-portfolio Release version 1.1.0](https://github.com/Keimeno/personal-portfolio/releases/tag/v1.1.0) - 2020-03-29
+* [neojax Release version 2.1.7](https://github.com/Keimeno/neojax/releases/tag/v2.1.7) - 2020-01-08
 <!-- recent_releases ends -->
 More [projects](https://github.com/Keimeno?tab=repositories)
 
