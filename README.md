@@ -38,5 +38,5 @@ Last updated
 2020-07-12 20:55
 <!-- last_updated ends -->
 </b>
-UTC
+CET
 </p>
