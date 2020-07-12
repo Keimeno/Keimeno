@@ -191,7 +191,7 @@ def convert_rfc_3339_cet_formatted(rfc_3339):
 if __name__ == "__main__":
     readme = root / "README.md"
     releases = fetch_releases(TOKEN)
-    releases.sort(key=lambda r: r["published_at"], reverse=True)
+    releases.sort(key=lambda r: r["date"], reverse=True)
     md="\n".join(
         [
             "| [{repo}]({repo_url}) | [{tag_name}]({tag_url}) | {date} |".format(**release)
