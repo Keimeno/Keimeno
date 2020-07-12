@@ -181,7 +181,7 @@ def fetch_commits(oauth_token):
               )
 
 
-    return commits
+    return [dict(t) for t in {tuple(d.items()) for d in commits}]
 
 def convert_rfc_3339_cet_formatted(rfc_3339):
     time = datetime.fromisoformat(rfc_3339[:-1]).strftime('%s')
