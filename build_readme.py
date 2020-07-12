@@ -170,7 +170,6 @@ if __name__ == "__main__":
             for commit in commits[:5]
         ]
     )
-    readme_contents=readme.open().read()
-    rewritten=replace_chunk(readme_contents, "recent_commits", md)
+    rewritten=replace_chunk(rewritten, "recent_commits", md)
 
     readme.open("w").write(rewritten)
