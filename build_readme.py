@@ -68,23 +68,29 @@ query {
 
 commits_query = """
 query {
-  viewer {
-    repositories(first: 100, privacy: PUBLIC) {
-      nodes {
-        name
-        url
-        defaultBranchRef {
-          target {
-            ... on Commit {
-              history(first: 1, author: {emails: ["constantin@metzworld.com"]}) {
-                nodes {
-                  ... on Commit {
-                    url
-                    committedDate
-                    oid
-                    author {
-                      name
-                      email
+  search(query: "Keimeno", type: USER, last: 1) {
+    nodes {
+      ... on User {
+       	contributionsCollection {
+          commitContributionsByRepository {
+            repository {
+              name
+              url
+              refs(refPrefix: "refs/heads/", first: 30) {
+                edges {
+                  node {
+                  	target {
+                      ... on Commit {
+                        history(first: 1, author: {emails: ["constantin@metzworld.com", "58604248+Keimeno@users.noreply.github.com"]}) {
+                          nodes {
+                            ... on Commit {
+                              url
+                              abbreviatedOid
+                              committedDate
+                            }
+                          }
+                        }
+                      } 
                     }
                   }
                 }
@@ -152,19 +158,25 @@ def fetch_commits(oauth_token):
     print()
     print(json.dumps(data, indent=4))
     print()
-    for repo in data["data"]["viewer"]["repositories"]["nodes"]:
-        if len(repo["defaultBranchRef"]["target"]["history"]["nodes"]) == 1 and repo["name"] not in repo_names:
+    for repo in data["data"]["search"]["nodes"][0]["contributionsCollection"]["commitContributionsByRepository"]:
+        if repo["name"] not in repo_names:
             repos.append(repo)
             repo_names.add(repo["name"])
-            commits.append(
-                {
-                    "repo": repo["name"],
-                    "repo_url": repo["url"],
-                    "url": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["url"],
-                    "date": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["committedDate"].split("T")[0],
-                    "oid": repo["defaultBranchRef"]["target"]["history"]["nodes"][0]["oid"][:7],
-                }
-            )
+            for branch in repo["refs"]["edges"]:
+              nodeList = branch["node"]["target"]["history"]["nodes"]
+              if len(nodeList) == 0:
+                continue
+
+              commit = nodeList[0]
+              commits.append(
+                  {
+                      "repo": repo["name"],
+                      "repo_url": repo["url"],
+                      "url": commit["url"],
+                      "date": commit["committedDate"].split("T")[0],
+                      "oid": commit["abbreviatedOid"],
+                  }
+              )
 
 
     return commits
@@ -186,7 +198,7 @@ if __name__ == "__main__":
     commits.sort(key = lambda r: r["date"], reverse=True)
     md = "\n".join(
         [
-            "| [{repo}]({repo_url}) | [{oid}]({url}) | {date}".format(**commit)
+            "| [{repo}]({repo_url}) | [{oid}]({url}) | {date} |".format(**commit)
             for commit in commits[:5]
         ]
     )
