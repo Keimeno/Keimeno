@@ -30,7 +30,7 @@ def replace_chunk(content, marker, chunk):
   elif marker == 'statistics':
     chunk = """| Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-"""
+""" + chunk
 
   chunk = "<!-- {} starts -->\n{}\n<!-- {} ends -->".format(marker, chunk, marker)
   return r.sub(chunk, content)
@@ -244,12 +244,10 @@ if __name__ == "__main__":
 
   stats = fetch_stats(TOKEN)
   md = "| {commits} | {issues} | {pull_requests} | {pull_requests_reviewed} |".format(**stats)
-  print(md)
-  print(stats)
   rewritten = replace_chunk(rewritten, "statistics", md)
 
   now = datetime.now(timezone("CET"))
   md = now.strftime("%d.%m.%Y %H:%M")
-  rewritten=replace_chunk(rewritten, "last_updated", md)
+  rewritten = replace_chunk(rewritten, "last_updated", md)
 
   readme.open("w").write(rewritten)
