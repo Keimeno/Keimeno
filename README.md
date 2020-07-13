@@ -1,5 +1,17 @@
 ## Overview
 
+### Statistics
+
+<!-- statistics starts -->
+
+| Commits | Issues Opened | PRs Opened | PRs Reviewed |
+| :- | :- | :- | :- |
+| 1445 | 27 | 56 | 2 |
+
+<!-- statistics ends -->
+
+---
+
 <table><tr><td valign="top">
 
 ### Recent releases
@@ -31,7 +43,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 
 </td></tr></table>
 
-<p style="text-align: right; font-style: italic;">
+<p>
 Last updated 
 <b>
 <!-- last_updated starts -->
