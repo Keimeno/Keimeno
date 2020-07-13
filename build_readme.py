@@ -244,6 +244,8 @@ if __name__ == "__main__":
 
   stats = fetch_stats(TOKEN)
   md = "| {commits} | {issues} | {pull_requests} | {pull_requests_reviewed} |".format(**stats)
+  print(md)
+  print(stats)
   rewritten = replace_chunk(rewritten, "statistics", md)
 
   now = datetime.now(timezone("CET"))
