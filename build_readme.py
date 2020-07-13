@@ -199,7 +199,7 @@ def fetch_commits(oauth_token):
 
 def fetch_stats(oauth_token):
   data = client.execute(
-    query=commits_query,
+    query=stats_query,
     headers={"Authorization": "Bearer {}".format(oauth_token)},
   )
 
