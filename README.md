@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 1624 | 55 | 86 | 5 |
+| 1629 | 55 | 86 | 5 |
 <!-- statistics ends -->
 
 ---
@@ -30,7 +30,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
-| [veloce](https://github.com/Keimeno/veloce) | [ca7d132](https://github.com/Keimeno/veloce/commit/ca7d13231b08fbc68f057c010ea7ea17ae6fc9a5) | 15.07.2020 23:25 |
+| [veloce](https://github.com/Keimeno/veloce) | [3528f2d](https://github.com/Keimeno/veloce/commit/3528f2d67506eaca8bc1cbfada32cd770d08061d) | 15.07.2020 23:58 |
 | [Bankingsystem](https://github.com/WHG-Students/Bankingsystem) | [a89659a](https://github.com/WHG-Students/Bankingsystem/commit/a89659a41567bdf042ef0310eb76f9aefa5fec73) | 14.07.2020 21:24 |
 | [Keimeno](https://github.com/Keimeno/Keimeno) | [ad1fb8c](https://github.com/Keimeno/Keimeno/commit/ad1fb8c28d15dc49f40f7b9268e1c710d96e0f2e) | 13.07.2020 15:27 |
 | [Hangar2](https://github.com/MiniDigger/Hangar2) | [fab8943](https://github.com/MiniDigger/Hangar2/commit/fab89436f4d4e79a751cfe67964a053ac199e11b) | 12.07.2020 15:53 |
@@ -43,7 +43,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-15.07.2020 23:33
+16.07.2020 00:32
 <!-- last_updated ends -->
 </b>
 CET
