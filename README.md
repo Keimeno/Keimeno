@@ -30,11 +30,11 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
-| [veloce](https://github.com/Keimeno/veloce) | [8fd2c8f](https://github.com/Keimeno/veloce/commit/8fd2c8fa709393a2d6b7014e970b2418c7409ee8) | 16.07.2020 14:16 |
 | [Bankingsystem](https://github.com/WHG-Students/Bankingsystem) | [a89659a](https://github.com/WHG-Students/Bankingsystem/commit/a89659a41567bdf042ef0310eb76f9aefa5fec73) | 14.07.2020 21:24 |
 | [Keimeno](https://github.com/Keimeno/Keimeno) | [ad1fb8c](https://github.com/Keimeno/Keimeno/commit/ad1fb8c28d15dc49f40f7b9268e1c710d96e0f2e) | 13.07.2020 15:27 |
 | [Hangar2](https://github.com/MiniDigger/Hangar2) | [fab8943](https://github.com/MiniDigger/Hangar2/commit/fab89436f4d4e79a751cfe67964a053ac199e11b) | 12.07.2020 15:53 |
 | [chatlog](https://github.com/Keimeno/chatlog) | [963e90c](https://github.com/Keimeno/chatlog/commit/963e90ccb1647feda2d34c9a7635c8a3f53a33cc) | 12.07.2020 14:53 |
+| [sequelize](https://github.com/sequelize/sequelize) | [5cabcbc](https://github.com/sequelize/sequelize/commit/5cabcbc87fbc12d234fbc1d67632a86e6d975f39) | 04.07.2020 06:31 |
 <!-- recent_commits ends -->
 
 </td></tr></table>
@@ -43,7 +43,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-19.07.2020 14:33
+19.07.2020 15:08
 <!-- last_updated ends -->
 </b>
 CET
