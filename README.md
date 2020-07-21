@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 1760 | 58 | 91 | 5 |
+| 1761 | 58 | 91 | 5 |
 <!-- statistics ends -->
 
 ---
@@ -31,11 +31,11 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
+| [segno](https://github.com/Keimeno/segno) | [8ba7bdf](https://github.com/Keimeno/segno/commit/8ba7bdffaf8ce8dd19de2941e94dccabad82cea4) | 21.07.2020 20:04 |
 | [segno](https://github.com/Keimeno/segno) | [44b5530](https://github.com/Keimeno/segno/commit/44b5530d829bcb81addece833fd8df4b6eeadb2c) | 21.07.2020 19:24 |
 | [Bankingsystem](https://github.com/WHG-Students/Bankingsystem) | [484ce82](https://github.com/WHG-Students/Bankingsystem/commit/484ce82b67b574b843f5faa704a1147219c19edc) | 20.07.2020 20:46 |
 | [chat-moderation](https://github.com/LuminuNET/chat-moderation) | [b14afc5](https://github.com/LuminuNET/chat-moderation/commit/b14afc5b377a63390ef840e7e0d9a47e88215c16) | 20.07.2020 20:12 |
 | [deno_website2](https://github.com/denoland/deno_website2) | [9f6a8d5](https://github.com/denoland/deno_website2/commit/9f6a8d50903b779308323986987078ca4e4a0125) | 19.07.2020 19:48 |
-| [Bankingsystem](https://github.com/WHG-Students/Bankingsystem) | [a89659a](https://github.com/WHG-Students/Bankingsystem/commit/a89659a41567bdf042ef0310eb76f9aefa5fec73) | 14.07.2020 21:24 |
 <!-- recent_commits ends -->
 
 </td></tr></table>
@@ -44,7 +44,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-21.07.2020 19:33
+21.07.2020 20:33
 <!-- last_updated ends -->
 </b>
 CET
