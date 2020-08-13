@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 1909 | 73 | 112 | 7 |
+| 1910 | 73 | 112 | 7 |
 <!-- statistics ends -->
 
 ---
@@ -31,8 +31,8 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
+| [segno](https://github.com/Keimeno/segno) | [522fbe0](https://github.com/Keimeno/segno/commit/522fbe03dccd1ea0c41b4a3a15d5baf652402da6) | 13.08.2020 21:14 |
 | [segno](https://github.com/Keimeno/segno) | [e640486](https://github.com/Keimeno/segno/commit/e6404864bf19528046736de62cb9074150a9fc55) | 01.08.2020 20:15 |
-| [segno](https://github.com/Keimeno/segno) | [06ec00c](https://github.com/Keimeno/segno/commit/06ec00cef1828e64694f7289a0f240b70fec45df) | 01.08.2020 20:14 |
 | [nest.land](https://github.com/nestdotland/nest.land) | [01c0f4b](https://github.com/nestdotland/nest.land/commit/01c0f4be6fe3bd09e7bc3c24974837db551fdb9d) | 27.07.2020 23:05 |
 | [Keimeno](https://github.com/Keimeno/Keimeno) | [31643b0](https://github.com/Keimeno/Keimeno/commit/31643b064df739b28497bc02a967615b3c3ef5c6) | 23.07.2020 22:06 |
 | [Bankingsystem](https://github.com/WHG-Students/Bankingsystem) | [484ce82](https://github.com/WHG-Students/Bankingsystem/commit/484ce82b67b574b843f5faa704a1147219c19edc) | 20.07.2020 20:46 |
@@ -44,7 +44,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-13.08.2020 20:33
+13.08.2020 21:33
 <!-- last_updated ends -->
 </b>
 CET
