@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 1914 | 74 | 113 | 7 |
+| 1916 | 74 | 114 | 7 |
 <!-- statistics ends -->
 
 ---
@@ -31,7 +31,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
-| [segno](https://github.com/Keimeno/segno) | [e4efce7](https://github.com/Keimeno/segno/commit/e4efce7d69204b7f5ab8b68abc57e348e8a157c6) | 13.08.2020 22:36 |
+| [segno](https://github.com/Keimeno/segno) | [b059954](https://github.com/Keimeno/segno/commit/b05995417fbe79853dbb148a30e8bb45bd025394) | 20.08.2020 23:31 |
 | [segno](https://github.com/Keimeno/segno) | [e640486](https://github.com/Keimeno/segno/commit/e6404864bf19528046736de62cb9074150a9fc55) | 01.08.2020 20:15 |
 | [nest.land](https://github.com/nestdotland/nest.land) | [01c0f4b](https://github.com/nestdotland/nest.land/commit/01c0f4be6fe3bd09e7bc3c24974837db551fdb9d) | 27.07.2020 23:05 |
 | [Keimeno](https://github.com/Keimeno/Keimeno) | [31643b0](https://github.com/Keimeno/Keimeno/commit/31643b064df739b28497bc02a967615b3c3ef5c6) | 23.07.2020 22:06 |
@@ -44,7 +44,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-20.08.2020 22:33
+20.08.2020 23:32
 <!-- last_updated ends -->
 </b>
 CET
