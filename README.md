@@ -31,11 +31,11 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
+| [seminararbeit](https://github.com/Keimeno/seminararbeit) | [8ab3a09](https://github.com/Keimeno/seminararbeit/commit/8ab3a0966d8de59f3c7c295bfaecb8f44358fce1) | 09.11.2020 13:39 |
 | [word-growth-rate-analyzer](https://github.com/Keimeno/word-growth-rate-analyzer) | [da013ef](https://github.com/Keimeno/word-growth-rate-analyzer/commit/da013ef7dfb8d0dc86ca728bd3e7404192f047d8) | 15.09.2020 00:29 |
 | [segno](https://github.com/Keimeno/segno) | [291c398](https://github.com/Keimeno/segno/commit/291c39846a31f0be967d5bc3c27f9258364ca74a) | 30.08.2020 14:37 |
 | [segno](https://github.com/Keimeno/segno) | [54466ef](https://github.com/Keimeno/segno/commit/54466ef694259cbe5d3aeac8f6a3ed65fdea8978) | 30.08.2020 14:19 |
 | [nest.land](https://github.com/nestdotland/nest.land) | [01c0f4b](https://github.com/nestdotland/nest.land/commit/01c0f4be6fe3bd09e7bc3c24974837db551fdb9d) | 27.07.2020 23:05 |
-| [Keimeno](https://github.com/Keimeno/Keimeno) | [31643b0](https://github.com/Keimeno/Keimeno/commit/31643b064df739b28497bc02a967615b3c3ef5c6) | 23.07.2020 22:06 |
 <!-- recent_commits ends -->
 
 </td></tr></table>
@@ -44,7 +44,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-11.11.2020 16:33
+11.11.2020 17:18
 <!-- last_updated ends -->
 </b>
 CET
