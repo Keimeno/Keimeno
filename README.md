@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 2102 | 100 | 129 | 27 |
+| 2103 | 100 | 129 | 27 |
 <!-- statistics ends -->
 
 ---
@@ -31,7 +31,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
-| [seminararbeit](https://github.com/Keimeno/seminararbeit) | [65b22f8](https://github.com/Keimeno/seminararbeit/commit/65b22f8d999c2ed4f9d20f51595a8a684fd5cca5) | 30.11.2020 22:38 |
+| [seminararbeit](https://github.com/Keimeno/seminararbeit) | [4e57a58](https://github.com/Keimeno/seminararbeit/commit/4e57a58cfc068863231b56b75e33eee06354a9e8) | 01.12.2020 00:32 |
 | [word-growth-rate-analyzer](https://github.com/Keimeno/word-growth-rate-analyzer) | [da013ef](https://github.com/Keimeno/word-growth-rate-analyzer/commit/da013ef7dfb8d0dc86ca728bd3e7404192f047d8) | 15.09.2020 00:29 |
 | [segno](https://github.com/Keimeno/segno) | [291c398](https://github.com/Keimeno/segno/commit/291c39846a31f0be967d5bc3c27f9258364ca74a) | 30.08.2020 14:37 |
 | [segno](https://github.com/Keimeno/segno) | [54466ef](https://github.com/Keimeno/segno/commit/54466ef694259cbe5d3aeac8f6a3ed65fdea8978) | 30.08.2020 14:19 |
@@ -44,7 +44,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-30.11.2020 23:36
+01.12.2020 00:33
 <!-- last_updated ends -->
 </b>
 CET
