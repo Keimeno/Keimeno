@@ -112,7 +112,7 @@ query {
   search(query: "Keimeno", type: USER, last: 1) {
     nodes {
       ... on User {
-       	contributionsCollection {
+       	contributionsCollection(from: "2010-01-01T00:00:00+00:00") {
         	totalIssueContributions
           totalPullRequestContributions
           totalPullRequestReviewContributions
