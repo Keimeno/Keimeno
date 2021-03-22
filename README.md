@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 574 | 40 | 42 | 12 |
+| 575 | 40 | 42 | 12 |
 <!-- statistics ends -->
 
 _Statistics currently only range from last year until now_
@@ -33,11 +33,11 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
+| [sequelize](https://github.com/sequelize/sequelize) | [c8c76d4](https://github.com/sequelize/sequelize/commit/c8c76d4312f1def0b3f84a213539270ea118367e) | 22.03.2021 02:04 |
 | [sequelize](https://github.com/sequelize/sequelize) | [466e361](https://github.com/sequelize/sequelize/commit/466e361ed495f44efa8aa98aa83a5385c7735d74) | 21.03.2021 18:47 |
 | [portfolio](https://github.com/Keimeno/portfolio) | [3cb98ab](https://github.com/Keimeno/portfolio/commit/3cb98ab4a25dde08c2d1cd8d95ac9081274f9056) | 22.01.2021 17:15 |
 | [twill](https://github.com/area17/twill) | [9e9c7f8](https://github.com/area17/twill/commit/9e9c7f8d1f9931fc47451576d921859c289976a1) | 21.01.2021 18:19 |
 | [WorldEditLab](https://github.com/playlegend/WorldEditLab) | [accbd3c](https://github.com/playlegend/WorldEditLab/commit/accbd3cd09b9aa54f8ac81ea11f1886b53d60884) | 20.01.2021 15:36 |
-| [Keimeno](https://github.com/Keimeno/Keimeno) | [50b1be3](https://github.com/Keimeno/Keimeno/commit/50b1be32e47729abf5dba92cce0a9d2739602a56) | 29.12.2020 13:42 |
 <!-- recent_commits ends -->
 
 </td></tr></table>
@@ -46,7 +46,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-22.03.2021 00:43
+22.03.2021 02:27
 <!-- last_updated ends -->
 </b>
 CET
