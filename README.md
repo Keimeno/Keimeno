@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 539 | 41 | 41 | 16 |
+| 539 | 41 | 41 | 18 |
 <!-- statistics ends -->
 
 _Statistics currently only range from last year until now_
@@ -46,7 +46,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-26.05.2021 21:27
+26.05.2021 22:06
 <!-- last_updated ends -->
 </b>
 CET
