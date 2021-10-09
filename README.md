@@ -5,7 +5,7 @@
 <!-- statistics starts -->
 | Commits | Issues Opened | PRs Opened | PRs Reviewed |
 | :- | :- | :- | :- |
-| 974 | 19 | 36 | 26 |
+| 975 | 19 | 36 | 26 |
 <!-- statistics ends -->
 
 _Statistics currently only range from last year until now_
@@ -33,11 +33,11 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 <!-- recent_commits starts -->
 | Repository | Commit | Date |
 | :- | :- | :- |      
+| [sequelize](https://github.com/sequelize/sequelize) | [f078f77](https://github.com/sequelize/sequelize/commit/f078f772d447e9148442ca4e9feae887e65adea0) | 09.10.2021 15:03 |
 | [word-growth-rate-analyzer](https://github.com/Keimeno/word-growth-rate-analyzer) | [c47b8bf](https://github.com/Keimeno/word-growth-rate-analyzer/commit/c47b8bf7e8d5171abca89f6d7ad89baa62fe0924) | 03.08.2021 20:28 |
 | [word-growth-rate-analyzer](https://github.com/Keimeno/word-growth-rate-analyzer) | [da3d685](https://github.com/Keimeno/word-growth-rate-analyzer/commit/da3d6853e02e2036bd4712bb4ba8c7f1e6de5f39) | 03.08.2021 20:28 |
 | [sequelize](https://github.com/sequelize/sequelize) | [c8c76d4](https://github.com/sequelize/sequelize/commit/c8c76d4312f1def0b3f84a213539270ea118367e) | 22.03.2021 02:04 |
 | [portfolio](https://github.com/Keimeno/portfolio) | [3cb98ab](https://github.com/Keimeno/portfolio/commit/3cb98ab4a25dde08c2d1cd8d95ac9081274f9056) | 22.01.2021 17:15 |
-| [twill](https://github.com/area17/twill) | [9e9c7f8](https://github.com/area17/twill/commit/9e9c7f8d1f9931fc47451576d921859c289976a1) | 21.01.2021 18:19 |
 <!-- recent_commits ends -->
 
 </td></tr></table>
@@ -46,7 +46,7 @@ More [projects](https://github.com/Keimeno?tab=repositories)
 Last updated 
 <b>
 <!-- last_updated starts -->
-09.10.2021 14:51
+09.10.2021 15:34
 <!-- last_updated ends -->
 </b>
 CET
