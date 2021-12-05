@@ -1,1 +1,1 @@
-![Metrics](https://metrics.lecoq.io/Keimeno?template=classic&repositories.affiliations=owner%2C%20organization_member%2C%20collaborator&isocalendar=1&habits=1&lines=1&skyline=1&isocalendar.duration=half-year&habits.from=200&habits.days=30&habits.facts=true&habits.charts=false&habits.trim=false&skyline.year=current-year&skyline.frames=60&skyline.quality=0.5&skyline.compatibility=false&config.timezone=Europe%2FBerlin)
+![Metrics](./github-metrics.svg)
